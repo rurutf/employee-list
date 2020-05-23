@@ -15,6 +15,59 @@ body {
 	"Helvetica Neue", "Helvetica", "Arial",
 	sans-serif;
 }
+
+form {
+	position: relative;
+	width: 300px;
+	margin: 20px;
+}
+.search:after {
+	content:"";
+	clear: both;
+	display: table;
+}
+.search form {
+	width: auto;
+	margin-right: 40px;
+}
+.search input {
+	width: 200px;
+	height: 30px;
+	padding-left: 10px;
+	border: 2px solid #808080;
+	border-radius: 15px;
+	outline: none;
+	position: relative;
+	font-family: BlinkMacSystemFont, -apple-system,
+	"Segoe UI", "Roboto", "Oxygen", "Ubuntu",
+	"Cantarell", "Fira Sans", "Droid Sans",
+	"Helvetica Neue", "Helvetica", "Arial",
+	sans-serif;
+	transition: .3s linear
+}
+.search input:focus {
+	width: 270px;
+}
+
+section {
+	padding-left: 10px;
+	display: table;
+	margin: 10px;
+}
+.editor {
+	display: table-cell;
+	font-size: 12px;
+	margin-left: 8px;
+
+}
+.editor button {
+	display: table-cell;
+	margin-right: 10px;
+	margin-bottom: 18px;
+	border: 2px solid #808080;
+	box-shadow: 0 0 5px #D8D8D8;
+}
+
 table {
 	display: grid;
 	border-collapse: collapse;
@@ -68,5 +121,8 @@ tr:nth-child(even) td {
 }
 .checkbox {
 	display: block;
+	margin: auto;
+	padding-left: 100px;
+	padding-right: 100px;
 
 }
